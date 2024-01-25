@@ -1,0 +1,389 @@
+/* algemeen */
+* {
+    max-width: 375px;
+    box-sizing: border-box;   /*wat is dit*/
+    overflow-x: hidden;
+}
+
+html{
+    margin: 0;
+    padding:0;
+}
+
+body {
+    margin:0px;
+}
+
+header, footer {
+
+    padding: 0 20px;
+    margin:0px;
+    width: 375px;
+    background-color: white;
+}
+
+main {
+
+    padding: 0 20px;
+    margin: 117.6px 0 0 0;
+    width: 375px;
+}
+
+@font-face {
+    font-family: BlackCat;
+    src: url(BlackCat.ttf);
+}
+
+@font-face {
+    font-family: DillontheCat;
+    src: url(DillontheCat.ttf);
+}
+
+h1, h2, h3 {
+    font-family: BlackCat;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+p {
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif, Arial, Helvetica;
+    color: inherit;
+}
+
+img {
+    
+    object-fit: contain;
+}
+/* header */
+
+header {
+    background-color: white;
+    position: fixed;
+}
+/*
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+*/
+.logocontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.2em 0 0.1em 0;
+    gap: 0.7em;
+}
+
+.logocontainer img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.logocontainer p {
+    font-family: DillontheCat;
+    font-size: 2em;
+    margin: 0;
+    width: 7em;
+
+}
+
+.terugknopcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.terugknopcontainer img {
+    object-fit: contain;
+}
+
+
+
+
+
+
+/* footer */
+.witruimte {
+    height: 4em;
+    background-color: #8080FF;
+}
+
+footer {
+    color: white;
+
+    background-image: url(images/footer.png);
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-bottom: 0;
+    /*background-sixe:cover;*/
+    background-color: white;
+}
+
+.hoi {                    
+    display:block;             /*ik moet deze selector veranderen in eenchild selector en niet een class selector*/
+    margin: 7em 0 5px 8.9em;
+}
+
+footer div {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.contactfooter {
+    flex-basis: 15em;
+}
+
+.contactfooter h3, .contactfooter p, .contactfooter a {
+    margin:3px;
+}
+
+.contactfooter h3 {
+    font-size: 1.3em;
+}
+
+.contactfooter a {
+    display: block;
+}
+
+
+.socialemedia {
+    width: fit-content;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer h3 {
+    font-family: DillontheCat;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer>p {
+    margin-bottom: 0;
+}
+
+/* index */
+
+
+.index {
+    text-align: center;
+    padding: 0;
+}
+
+.index article {
+    padding: 4em 20px;
+}
+
+.grijs {
+    background-color:#FBFBFB;
+    width: 100vw;
+}
+
+.footerindex {
+    background-color: #FBFBFB;
+}
+
+/*
+kan weg?
+.button img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+*/
+
+/* button pag 1*/
+
+.button {
+    display: inline-block;
+    padding: 0.45em 2em;
+    font-size: 1.9em;
+    font-family: DillontheCat;
+    text-decoration: none;
+    background-color: #8080FF;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.backgroundcolor {
+    background-color: #FBFBFB;
+    padding: 0 20px 1em 20px;
+}
+/* bekijk-onze-poezen */
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.button2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+    background-color: #8080FF;
+    height: 6em;
+    width: 6em;
+    border-radius: 10px;
+    gap: 0.2em;
+}
+
+.button2 img, .button2 p {
+    margin: 0;
+    object-fit: contain;
+    
+}
+
+.button2 img {
+    max-height: 3.4em;
+}
+
+.locatie-container {
+    display: flex;
+    justify-content: flex-start;
+    gap:0.5em;
+    align-items: center;
+    margin-bottom: 2.6em;
+}
+
+.locatie-container a {
+    text-decoration: underline;
+}
+
+.katpreview {
+    padding: 0.5em;
+    background-color: #EFEFEF;
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    gap: 0.2em;
+    margin: 0.5em 0;
+}
+
+.katpreview h2 {
+    margin: 0;
+    
+}
+
+.titel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.inhoud {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.inhoud img {
+    background-color: white;
+    border-radius: 10px;
+    width: 42%;
+}
+
+.inhoud div {
+    width: 58%;
+    padding-left: 0.4em;
+}
+
+.inhoud p {
+    margin: 0.5em 0;
+}
+
+
+.buttonbekijk {
+    display: inline-block;
+    padding: 0.25em 0 0.15em 0;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: DillontheCat;
+    text-decoration: none;
+    background-color: #8080FF;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* diva */
+
+.foto {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.buttonbelopvang {
+    display: flex;
+    padding: 0.45em 0.5em 0.35em 0;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: DillontheCat;
+    text-decoration: none;
+    background-color: #8080FF;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    align-items: center;
+}
+
+.buttonbelopvang p {
+    margin: 0;
+    font-family: DillontheCat;
+}
+.titel h1 {
+    margin: 0;
+}
+
+
+/* wordt aan gewerkt */
+.anders {
+    font-family: DillontheCat;
+    font-size: 2.2em;
+}
+
+.deel1 {
+    text-align: center;
+}
+.deel1 img {
+    width: 40%;
+    margin-top: 3em;
+}
+
+.button-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 22.7px;
+    padding: 1em 0;
+}
+
+.bovenfooter {
+    height: 3em;
+}
